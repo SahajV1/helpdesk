@@ -1,0 +1,53 @@
+import LucideBookOpen from "~icons/lucide/book-open";
+import LucideChartColumn from "~icons/lucide/chart-column";
+import LucideContact2 from "~icons/lucide/contact-2";
+import LucideTicket from "~icons/lucide/ticket";
+import { OrganizationsIcon } from "../icons";
+import PhoneIcon from "../icons/PhoneIcon.vue";
+import { __ } from "@/translation";
+
+export const agentPortalSidebarOptions = [
+  {
+    label: __("Tickets"),
+    icon: LucideTicket,
+    to: "TicketsAgent",
+  },
+  {
+    label: __("Knowledge Base"),
+    icon: LucideBookOpen,
+    to: "AgentKnowledgeBase",
+  },
+  {
+    label: __("Customers"),
+    icon: OrganizationsIcon,
+    to: "CustomerList",
+  },
+  {
+    label: __("Contacts"),
+    icon: LucideContact2,
+    to: "ContactList",
+  },
+  {
+    label: __("Agent Performance"),
+    icon: LucideChartColumn,
+    to: "AgentPerformance",
+  },
+  {
+    label: __("Call Logs"),
+    icon: PhoneIcon,
+    to: "CallLogs",
+  },
+];
+
+export const customerPortalSidebarOptions = [
+  {
+    label: __("Tickets"),
+    icon: LucideTicket,
+    to: "TicketsCustomer",
+  },
+  {
+    label: __("Knowledge Base"),
+    icon: LucideBookOpen,
+    to: "CustomerKnowledgeBase",
+  },
+];
